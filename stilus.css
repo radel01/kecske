@@ -11,7 +11,7 @@ main{
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas: 
         "h h h"
-        "sb a sj"
+        "ab a aj"
         "f f f"
     ;
 }
@@ -43,4 +43,16 @@ footer p{
 .kiemel{
     border: 2px solid red;
     cursor: grab;
+}
+.etunes{
+    display: none;
+}
+article{
+    grid-area: a;
+    text-align: center;
+    background-image: url(kepek/tenger.png);
+    background-size: 100%;
+}
+article>div>img{
+    height: 421px;
 }
