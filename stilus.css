@@ -1,0 +1,46 @@
+header, article, aside, footer{
+    border: 2px dotted rgb(255, 255, 255);
+    margin: 10px;
+}
+body{
+    background-color: rgb(205, 224, 239);
+}
+main{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+        "h h h"
+        "sb a sj"
+        "f f f"
+    ;
+}
+aside p>img{
+    height: 100px;
+}
+header{
+    grid-area: h;
+}
+.bal{
+    grid-area: ab;
+}
+.jobb{
+    grid-area: aj;
+}
+footer{
+    grid-area: f;
+}
+h1{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.kiemel{
+    border: 2px solid red;
+    cursor: grab;
+}
